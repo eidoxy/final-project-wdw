@@ -14,6 +14,6 @@ footer{
     word-wrap: break-word;
 }
 
-footer #logo {
+footer #logo > h4 {
     transform: rotate(-90deg);
 }
