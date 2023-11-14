@@ -20,8 +20,9 @@
 </head>
 <body>
     <main>
+        <!-- Navbar -->
         <header class="d-flex justify-content-center py-3 px-5">
-            <a href="/" class="align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <a href="/" class="align-items-center link-body-emphasis text-decoration-none">
                 <span class="fs-4"><strong>RAZAREST</strong></span>
             </a>
             <ul class="nav nav-pills mb-md-0 ms-md-auto">
@@ -32,13 +33,41 @@
                 <li class="nav-item"><a href="aboutUs.html" class="nav-link link-body-emphasis">About</a></li>
             </ul>
         </header>
+        <!-- End Navbar -->
         
-        <div class="container">
-            <h1>Ini adalah menu yang</h1>
+        <!-- Main Image Menu -->
+        <div id="main-image-menu">
+            <img src="/asset/menu-page/jumbroton-image.png" class="flex-shrink-0" alt="Main image Menu" style="width: 100%; height: 90vh; object-fit: cover;">
         </div>
+        <!-- End Main Image Menu -->
+
+        <!-- List Menu -->
+        <div id="list-menu">
+            <div class="card">
+                <div class="card-title container mt-5">
+                    <h3><strong>Our Menu</strong></h3>
+                    <div class="filter-menu d-flex gap-3 mt-4">
+                        <div>
+                            <button class="btn btn-outline-primary btn-block text-dark rounded-pill" onclick="showAllMenu()">All</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-primary btn-block text-dark rounded-pill" onclick="showMenu('food')">Foods</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-primary btn-block text-dark rounded-pill" onclick="showMenu('drink')">Beverage</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-primary btn-block text-dark rounded-pill" onclick="showMenu('drink')">Dessert</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End List Menu -->
     </main>
     
-    <footer class="container py-5 fixed-bottom">
+    <!-- Footer -->
+    <footer class="container py-5">
         <div class="row">
             <div class="col-3 col-md-2 mb-3">
                 <h5><strong>Other Link</strong></h5>
@@ -57,7 +86,10 @@
                 </ul>
             </div>
 
-            <div id="logo" class="col-6 col-md-auto ms-md-auto">
+            <!-- <div id="logo" class="col-6 col-md-auto ms-md-auto">
+                <h4 class=""><strong>RAZAREST</strong></h4>
+            </div> -->
+            <div id="logo" class="col d-flex col-md-auto ms-md-auto">
                 <h4><strong>RAZAREST</strong></h4>
             </div>
         </div>
@@ -71,6 +103,7 @@
             </ul>
         </div>
     </footer>
+    <!-- End Footer -->
 
     <!-- Libraries -->
     <script src="library/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
