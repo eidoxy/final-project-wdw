@@ -1,3 +1,4 @@
+/* Style for Home Page */
 header span {
     font-family: 'Montserrat', sans-serif;
 }
@@ -14,6 +15,69 @@ footer{
     word-wrap: break-word;
 }
 
-footer #logo {
+footer #logo > h4 {
     transform: rotate(-90deg);
 }
+/* End Style for Home Page */
+
+/* Style for Menu Page */
+@media screen and (max-width: 567px) {
+    .carousel-inner{
+        display: flex;
+    }
+
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+}
+
+.img-wrapper{
+    max-width: 100%;
+    height: 23vw;
+}
+
+.carousel-inner{
+    display: flex;
+    padding: 1em;
+}
+
+.main-image-menu {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#list-menu {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+    z-index: 1;
+    border: none;
+    transform: translateY(-200px);
+}
+
+#list-menu .card-list{
+    background-color: #fff;
+    border-radius: 80px !important;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: none;
+}
+
+#list-menu .card .card-title{
+    border: none;
+    border-radius: 80px !important;
+    width: 100%;
+}
+
+.card-menu {
+    box-shadow: 10px;
+    border-radius: 20px !important;
+}
+/* End Style for Menu Page */
