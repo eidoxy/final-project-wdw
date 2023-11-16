@@ -87,6 +87,26 @@ footer #logo > h4 {
     box-shadow: 10px;
     border-radius: 20px !important;
 }
+
+.swiper {
+    width: 90vw;
+    height: 550px;
+}
+
+.swiper .swiper-navBtn {
+    color: #FF9500;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+.swiper .swiper-navBtn:hover {
+    color: #fff;
+    background-color: #FF9500;
+    transition: 0.3s ease-in-out;
+}
 /* End Style for Menu Page */
 
 /* Style for Location Page */
