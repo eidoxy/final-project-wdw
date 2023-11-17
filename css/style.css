@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
 /* Style for Home Page */
 header span {
     font-family: 'Montserrat', sans-serif;
@@ -89,23 +91,32 @@ footer #logo > h4 {
 }
 
 .swiper {
-    width: 90vw;
+    width: 100vw;
     height: 550px;
 }
 
 .swiper .swiper-navBtn {
     color: #FF9500;
     background-color: #fff;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+.swiper .swiper-navBtn::before,
+.swiper .swiper-navBtn::after {
+    font-size: 20px;
 }
 
 .swiper .swiper-navBtn:hover {
     color: #fff;
     background-color: #FF9500;
     transition: 0.3s ease-in-out;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: #FF9500;
 }
 /* End Style for Menu Page */
 
