@@ -11,6 +11,12 @@
     }
 }
 
+.filterable-menu .background-title {
+    background-color: #FF9500;
+    height: 48px;
+    width: 25vw;
+}
+
 .main-image-text{
     position: absolute;
     top: 50%;

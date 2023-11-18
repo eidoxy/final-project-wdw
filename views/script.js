@@ -1,21 +1,15 @@
 let swiperCards = new Swiper('.swiper', {
+    // Optional parameters
     slidesPerView: 3,
     slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     centerSlide: true,
     fade: true,
-    grabCursor: true,
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
 
     breakpoints: {

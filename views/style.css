@@ -1,0 +1,21 @@
+/* CSS for screens with max-width: 1000px */
+@media (max-width: 1000px) {
+    .container.d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card-why-us {
+        width: 50%;
+    }
+}
+
+/* CSS for screens with max-width: 560px */
+@media (max-width: 560px) {
+    .card-why-us {
+        width: 100%;
+    }
+}
+.swiper {
+    width: 100vw;
+    height: 480px;
+}
