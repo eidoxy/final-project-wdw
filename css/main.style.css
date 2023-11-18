@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
+/* Style for Home Page */
+header span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header ul {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+footer #logo > h4 {
+    transform: rotate(-90deg);
+}
+/* End Style for Home Page */
