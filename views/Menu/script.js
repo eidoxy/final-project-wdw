@@ -4,7 +4,7 @@ const filterableMenu = document.querySelectorAll(".filterable-menu");
 
 // Define a function for filter menu
 const filterMenu = e => {
-    document.querySelector(".active").classList.remove("active");
+    document.querySelector(".active").classList.remove("active", "active");
     e.target.classList.add("active");
 
     // Iterate over each filterable menu

@@ -23,7 +23,6 @@ footer #logo > h4 {
 
 .nav-link.active {
     background-color: #fff !important;
-    font-weight: 600 !important;
     color: #FF9500 !important;
 }
 
