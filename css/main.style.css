@@ -17,8 +17,13 @@ footer{
     word-wrap: break-word;
 }
 
-footer #logo > h4 {
+footer #logo {
     transform: rotate(-90deg);
+}
+
+footer #logo h4 {
+    height: 80px;
+    transform: translateY(120px);
 }
 
 .nav-link.active {

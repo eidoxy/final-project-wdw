@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styles -->
     <link rel="stylesheet" href="../css/main.style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Libraries -->
-    <!-- <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../css/main.min.css"/>
-    <link rel="stylesheet" href="../library/iziToast/iziToast.min.css">
     <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css">
 
     <link rel="shortcut icon" href="../asset/RAZAREST Logo.png" type="image/x-icon">
@@ -33,13 +32,15 @@
         <!-- End Navbar -->
         
         <!-- Main Image -->
-        <div id="main-image" style="height: 90vh; width: 100%;">
-            <img src="../asset/home-page/Rempah-rempah dan makanan.jpg" class="flex-shrink-0" alt="Main image" style="width: 100%; height: 90vh; object-fit: cover;">
-        </div>
+        <section class="jumbroton" id="main-image" style="height: 90vh; width: 100%;">
+            <div>
+                <img src="../asset/home-page/Rempah-rempah dan makanan.jpg" class="flex-shrink-0" alt="Main image" style="width: 100%; height: 90vh; object-fit: cover;">
+            </div>
+        </section>
         <!-- End Main Image -->
 
         <!-- About Us -->
-        <div id="about-us" style="height: 100vh;">
+        <section class="content" id="about-us" style="height: 100vh;">
             <div class="container" style="height: 100%; display: flex; justify-content: center; align-items: center;">
                 
                 <div class="d-flex" style="align-items: center;">
@@ -47,7 +48,7 @@
                         <img src="../asset/home-page/Foto restoran.jpg" class="flex-shrink-0 ms-5" alt="Main image" style="width: 440px; height: 440px; object-fit: cover;">
                     </div>
                     <div class="container">
-                        <h1><strong>About Razarest</strong></h1>
+                        <h1><strong>About RAZAREST</strong></h1>
                         <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                         <div class="mt-5 d-flex text-center">
@@ -78,11 +79,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- End About Us -->
 
         <!-- Menu -->
-        <div id="menu" style="display: flex; height: 100vh; justify-content: center; align-items: center;">
+        <section class="content" id="menu" style="display: flex; height: 100vh; justify-content: center; align-items: center;">
             <div class="container my-5" style="max-width: 100%;">
 
                 <div class="text-center">
@@ -93,75 +94,91 @@
                 <div id="card-menu" class="container mt-5 swiper">
                     <div class="swiper-wrapper d-flex gap-0 text-center">
 
-                        <div class="d-flex px-4 justify-content-center align-items-center swiper-slide">
-                            <div class="card mb-4 rounded-3 shadow border-0" style="width: 24rem;">
-                                <img src="../asset/home-page/Featured makanan-1.jpg" class="card-img-top" alt="..." style="height: 270px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h3 class="card-title pricing-card-title">Judul Menu</h3>
-                                    <p class="mt-3 mb-4" style="font-size: 14px; font-weight: 400;">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum quo voluptate suscipit numquam nostrum quaerat sunt quis. Odio alias, odit placeat doloremque veniam voluptatum suscipit nesciunt vero voluptatem nobis.
-                                    </p>
+                        <div class="d-flex justify-content-center align-items-center swiper-slide">
+                            <div class="card card-menu border-0 shadow">
+                                <div class="bd-placeholder-img card-img-top">
+                                    <img src="../asset/home-page/Featured makanan-1.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body px-4">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <div class="card-footer px-4 mb-2">
+                                    <div class="d-flex">
+                                        <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                        <p class="harga-menu ms-auto mb-0" style="color: tomato;">Best Seller!</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="d-flex px-4 justify-content-center align-items-center swiper-slide">
-                            <div class="card mb-4 rounded-3 shadow border-0" style="width: 24rem;">
-                                <img src="../asset/home-page/Featured makanan-2.jpg" class="card-img-top" alt="..." style="height: 270px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h3 class="card-title pricing-card-title">Judul Menu</h3>
-                                    <p class="mt-3 mb-4" style="font-size: 14px; font-weight: 400;">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum quo voluptate suscipit numquam nostrum quaerat sunt quis. Odio alias, odit placeat doloremque veniam voluptatum suscipit nesciunt vero voluptatem nobis.
-                                    </p>
+                        <div class="d-flex justify-content-center align-items-center swiper-slide">
+                            <div class="card card-menu border-0 shadow">
+                                <div class="bd-placeholder-img card-img-top">
+                                    <img src="../asset/home-page/Featured makanan-2.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body px-4">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <div class="card-footer px-4 mb-2">
+                                    <div class="d-flex">
+                                        <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                        <p class="harga-menu ms-auto mb-0" style="color: tomato;">Best Seller!</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="d-flex px-4 justify-content-center align-items-center swiper-slide">
-                            <div class="card mb-4 rounded-3 shadow border-0" style="width: 24rem;">
-                                <img src="../asset/home-page/Featured makanan-3.jpg" class="card-img-top" alt="..." style="height: 270px; object-fit: cover; ">
-                                <div class="card-body">
-                                    <h3 class="card-title pricing-card-title">Judul Menu</h3>
-                                    <p class="mt-3 mb-4" style="font-size: 14px; font-weight: 400;">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum quo voluptate suscipit numquam nostrum quaerat sunt quis. Odio alias, odit placeat doloremque veniam voluptatum suscipit nesciunt vero voluptatem nobis.
-                                    </p>
+                        <div class="d-flex justify-content-center align-items-center swiper-slide">
+                            <div class="card card-menu border-0 shadow">
+                                <div class="bd-placeholder-img card-img-top">
+                                    <img src="../asset/home-page/Featured makanan-3.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body px-4">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <div class="card-footer px-4 mb-2">
+                                    <div class="d-flex">
+                                        <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                        <p class="harga-menu ms-auto mb-0" style="color: tomato;">Best Seller!</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="d-flex px-4 justify-content-center align-items-center swiper-slide">
-                            <div class="card mb-4 rounded-3 shadow border-0" style="width: 24rem;">
-                                <img src="../asset/home-page/Featured makanan-3.jpg" class="card-img-top" alt="..." style="height: 270px; object-fit: cover; ">
-                                <div class="card-body">
-                                    <h3 class="card-title pricing-card-title">Judul Menu</h3>
-                                    <p class="mt-3 mb-4" style="font-size: 14px; font-weight: 400;">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum quo voluptate suscipit numquam nostrum quaerat sunt quis. Odio alias, odit placeat doloremque veniam voluptatum suscipit nesciunt vero voluptatem nobis.
-                                    </p>
+                        <div class="d-flex justify-content-center align-items-center swiper-slide">
+                            <div class="card card-menu border-0 shadow">
+                                <div class="bd-placeholder-img card-img-top">
+                                    <img src="../asset/home-page/Featured makanan-4.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body px-4">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                        of the card's content.</p>
+                                </div>
+                                <div class="card-footer px-4 mb-2">
+                                    <div class="d-flex">
+                                        <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                        <p class="harga-menu ms-auto mb-0" style="color: tomato;">Best Seller!</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="d-flex px-4 justify-content-center align-items-center swiper-slide">
-                            <div class="card mb-4 rounded-3 shadow border-0" style="width: 24rem;">
-                                <img src="../asset/home-page/Featured makanan-3.jpg" class="card-img-top" alt="..." style="height: 270px; object-fit: cover; ">
-                                <div class="card-body">
-                                    <h3 class="card-title pricing-card-title">Judul Menu</h3>
-                                    <p class="mt-3 mb-4" style="font-size: 14px; font-weight: 400;">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum quo voluptate suscipit numquam nostrum quaerat sunt quis. Odio alias, odit placeat doloremque veniam voluptatum suscipit nesciunt vero voluptatem nobis.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
 
             </div>
-        </div>
+        </section>
         <!-- End Menu -->
 
         <!-- Why Us -->
-        <div id="why-us" style="display: flex; height: 100vh; justify-content: center; align-items: center;">
+        <section class="content" id="why-us" style="display: flex; height: 100vh; justify-content: center; align-items: center;">
             <div class="container" style="max-width: 100%;">
                 <div class="text-center">
                     <h1><strong>Customer Say</strong></h1>
@@ -176,7 +193,7 @@
                                 <img src="../asset/Ellipse.png" class="card-img-top ms-4 mt-4" alt="..." style="width: 40px;">
                                 <div class="card-body mx-4 ps-0">
                                     <p class="mt-3 mb-4 text-start" style="font-size: 14px; font-weight: 400;">
-                                        RAZAREST adalah tempat terbaik untuk merasakan autentisitas hidangan Malaysia. Ramen dan Soup mereka sungguh tak tertandingi!
+                                        RAZAREST adalah tempat terbaik untuk merasakan autentisitas hidangan Indoensia. Ramen dan Soup mereka sungguh tak tertandingi!
                                     </p>
                                     <div class="d-flex" style="gap: 8px;">
                                         <i class="fa-solid fa-star" style="color: #ff9500;"></i>
@@ -247,11 +264,11 @@
                 </div>
 
             </div>
-        </div>
+        </section>
         <!-- End Why Us -->
 
         <!-- Gallery -->
-        <div id="gallery" style="display: flex; height: 120vh; justify-content: center; align-items: center; background-color: #22282E;">
+        <section id="gallery" style="display: flex; height: 120vh; justify-content: center; align-items: center; background-color: #22282E;">
             <div class="container text-white" style="max-width: 100%;">
                 <div class="text-center">
                     <h1><strong>Our Gallery</strong></h1>
@@ -290,17 +307,19 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- End Gallery -->
 
-        <div id="location" style="display: flex; height: 60vh; justify-content: center; align-items: center; background-color: #22282E;">
+        <!-- Location -->
+        <section id="location" style="display: flex; height: 60vh; justify-content: center; align-items: center; background-color: #22282E;">
             <div class="container text-white text-center" style="max-width: 80%;">
                 <h1><strong>Find our Existing Outlet From Your Near Area</strong></h1>
                 <div class="mt-5">
-                    <a class="btn btn-primary text-white px-4 py-2" href="#" role="button" style="border-radius: 80px;">More About Us</a>
+                    <a class="btn btn-primary text-white px-4 py-2" href="Location/location.html" role="button" style="border-radius: 80px;">More About Us</a>
                 </div>
             </div>
-        </div>
-        <!-- End Gallery -->
+        </section>
+        <!-- End Location -->
 
     </main>
     
@@ -346,8 +365,6 @@
     <!-- Libraries -->
     <script src="../library/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="../library/iziToast/iziToast.min.js" type="text/javascript"></script>
     <script src="../../node_modules/swiper/swiper-bundle.min.js"></script>
 
     <!-- Scripts -->
