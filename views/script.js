@@ -45,7 +45,7 @@ function animateValue(id, start, end, duration) {
 
 window.onload = function() {
     setTimeout(function() {
-        animateValue("counter1", 0, 10, 2000);
+        animateValue("counter1", 0, 3, 2000);
         animateValue("counter2", 0, 6, 2000);
         animateValue("counter3", 0, 45, 2000);
     }, 1000);

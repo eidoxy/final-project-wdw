@@ -37,7 +37,7 @@
                 <img src="asset/home-page/Rempah-rempah dan makanan.jpg" class="flex-shrink-0" alt="Main image" style="width: 100%; height: 90vh; object-fit: cover; filter: blur(2px);">
                 <div class="position-absolute top-50 p-5 text-white" style="transform: translateY(-50%);">
                     <h1><strong>Make your hangout and</strong></h1>
-                    <h1><strong>mood always on top.</strong></h1>
+                    <h1><strong>mood always on top</strong></h1>
                     <p style="font-size: 1.2rem; opacity: 85%;">Suitable Restaurant for young people</p>
                     <a href="views/Menu/menu.html" class="btn btn-primary rounded-pill text-white px-4">See Menu</a>
                 </div>
@@ -50,8 +50,11 @@
             <div class="container" style="height: 100%; display: flex; justify-content: center; align-items: center;">
                 
                 <div class="d-flex" style="align-items: center;">
-                    <div class="container">
-                        <img src="asset/home-page/Foto restoran.jpg" class="flex-shrink-0 ms-5" alt="Main image" style="width: 440px; height: 440px; object-fit: cover;">
+                    <div class="container position-relative">
+                        <img src="asset/home-page/Foto restoran.jpg" class="img-fluid flex-shrink-0 top-0 start-50 translate-middle position-absolute" alt="Main image" style="width: 440px; height: 440px; object-fit: cover; z-index: 2;">
+                        <img src="asset/home-page/Foto restoran-2.png" class="img-fluid flex-shrink-0 position-absolute" alt="Main image" style="width: 440px; height: 440px; object-fit: cover; z-index: 1; transform: translate(50px, -250px);">
+                        <!-- <img src="asset/home-page/Foto restoran.jpg" class="flex-shrink-0 ms-5" alt="Main image" style="width: 440px; height: 440px; object-fit: cover; z-index: 1;">
+                        <img src="asset/home-page/Foto restoran.jpg" class="flex-shrink-0 ms-5" alt="Main image" style="width: 440px; height: 440px; object-fit: cover;"> -->
                     </div>
                     <div class="container">
                         <h1><strong>About RAZAREST</strong></h1>
@@ -89,7 +92,7 @@
         <!-- End About Us -->
 
         <!-- Menu -->
-        <section class="content" id="menu" style="display: flex; height: 100vh; justify-content: center; align-items: center;">
+        <section class="content container border-top border-bottom" id="menu" style="display: flex; height: 100vh; justify-content: center; align-items: center;">
             <div class="container my-5" style="max-width: 100%;">
 
                 <div class="text-center">
@@ -292,24 +295,24 @@
                     <div class="col-md-6">
                         <div class="row g-0 flex-md-row mb-4 h-md-250 position-relative">
                             <div class="col-auto">
-                                <img src="asset/home-page/main-image.png" alt="Gallery 1" class="img-fluid mx-4" width="700" height="405">
+                                <img src="asset/home-page/main-image.png" alt="Gallery 1" class="img-fluid flex-shrink-0" width="700" height="405">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center gap-1">
+                <div class="d-flex justify-content-center gap-4">
                     <div class="justify-content-center align-items-center">
-                        <img src="asset/home-page/gallery-1.jpg" alt="Gallery 1" class="img-fluid mx-4" width="293" height="160">
+                        <img src="asset/home-page/gallery-1.jpg" alt="Gallery 1" class="img-fluid flex-shrink-0" width="293" height="160">
                     </div>
                     <div class="justify-content-center align-items-center">
-                        <img src="asset/home-page/gallery-2.jpg" alt="Gallery 2" class="img-fluid mx-4" width="293" height="160">
+                        <img src="asset/home-page/gallery-2.jpg" alt="Gallery 2" class="img-fluid flex-shrink-0" width="293" height="160">
                     </div>
                     <div class="justify-content-center align-items-center">
-                        <img src="asset/home-page/gallery-3.jpg" alt="Gallery 3" class="img-fluid mx-4" width="293" height="160">
+                        <img src="asset/home-page/gallery-3.jpg" alt="Gallery 3" class="img-fluid flex-shrink-0" width="293" height="160">
                     </div>
                     <div class="justify-content-center align-items-center">
-                        <img src="asset/home-page/gallery-4.jpg" alt="Gallery 3" class="img-fluid mx-4" width="293" height="160">
+                        <img src="asset/home-page/gallery-4.jpg" alt="Gallery 3" class="img-fluid flex-shrink-0" width="293" height="160">
                     </div>
                 </div>
             </div>
