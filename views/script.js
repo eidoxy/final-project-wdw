@@ -1,5 +1,7 @@
+import Swiper from 'swiper';
+
 let swiperCards = new Swiper('.swiper', {
-    // Optional parameters
+    // Optional parameter
     slidesPerView: 3,
     slidesPerGroup: 1,
     loop: true,
