@@ -2,14 +2,18 @@
   "name": "final-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eidoxy/final-project-wdw.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.2",
+    "final-project": "github:eidoxy/final-project-wdw",
     "swiper": "^11.0.4"
   }
 }

@@ -39,7 +39,7 @@
     width: 100%;
     z-index: 1;
     border: none;
-    transform: translateY(-200px);
+    transform: translateY(-100px);
 }
 
 #list-menu .card-list{
