@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="../../css/main.style.css">
 
     <!-- Libraries -->
-    <!-- <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../../css/main.min.css"/>
-    <link rel="stylesheet" href="../../library/iziToast/iziToast.min.css">
-    <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.css" integrity="sha512-1CRCT9P70z3SktzqL7P8o8YvlmT1nXwFeXLBuVBa4mzQJ4fsvpmsObWooerRi4WzQT8QFrBVz/36mt/XGPYVzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="shortcut icon" href="../../asset/RAZAREST Logo.png" type="image/x-icon">
     <title>Menu</title>
 </head>
 <body>
@@ -23,8 +22,8 @@
                 <span class="fs-4"><strong>RAZAREST</strong></span>
             </a>
             <ul class="nav nav-pills mb-md-0 ms-md-auto">
-                <li class="nav-item"><a href="../index.html" class="nav-link link-body-emphasis">Home</a></li>
-                <li class="nav-item"><a href="../Menu/menu.html" class="nav-link link-body-emphasis" aria-current="page">Menu</a></li>
+                <li class="nav-item"><a href="../../index.html" class="nav-link link-body-emphasis">Home</a></li>
+                <li class="nav-item"><a href="../Menu/menu.html" class="nav-link link-body-emphasis active" aria-current="page">Menu</a></li>
                 <li class="nav-item"><a href="../Gallery/gallery.html" class="nav-link link-body-emphasis">Gallery</a></li>
                 <li class="nav-item"><a href="../Location/location.html" class="nav-link link-body-emphasis">Location</a></li>
                 <li class="nav-item"><a href="../AboutUs/aboutUs.html" class="nav-link link-body-emphasis">About</a></li>
@@ -33,22 +32,24 @@
         <!-- End Navbar -->
         
         <!-- Main Image Menu -->
-        <div id="main-image-menu">
-            <img src="/asset/menu-page/jumbroton-image.png" class="flex-shrink-0" alt="Main image Menu" style="width: 100%; height: 90vh; object-fit: cover; filter: blur(3px);">
-            <h1 class="main-image-text text-white text-center">Our Delicious Food and Drink for You</h1>
-        </div>
+        <section id="main-image-menu">
+            <div class="position-relative overflow-hidden">
+                <img src="/asset/menu-page/jumbroton-image.png" class="flex-shrink-0" alt="Main image Menu" style="width: 100%; height: 90vh; object-fit: cover; filter: blur(3px);">
+                <h1 class="main-image-text text-white text-center">Our Delicious Food and Drink for You</h1>
+            </div>
+        </section>
         <!-- End Main Image Menu -->
 
         <!-- List Menu -->
-        <div id="list-menu">
-            <div class="card card-list">
+        <section id="list-menu">
+            <div class="card-list py-3">
 
                 <div class="card-title container my-5">
                     <h3><strong>Our Menu</strong></h3>
                     <!-- Filter -->
                     <div class="filter-btn d-flex gap-4 mt-4">
                         <div>
-                            <button data-name="all" class="btn btn-outline-primary btn-block text-dark rounded-pill active px-3">All</button>
+                            <button data-name="all" class="btn btn-outline-primary btn-block text-dark rounded-pill px-3">All</button>
                         </div>
                         <div>
                             <button data-name="foods" class="btn btn-outline-primary btn-block text-dark rounded-pill px-3">Foods</button>
@@ -64,11 +65,13 @@
                 </div>
 
                 <!-- Dishes -->
-                <div class="filterable-menu menu" data-name="foods">
+                <div class="filterable-menu menu mt-5" data-name="foods">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Dishes</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Dishes</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
     
@@ -198,11 +201,13 @@
                 <!-- End Dishes -->
 
                 <!-- Noodle -->
-                <div class="filterable-menu menu" data-name="foods">
+                <div class="filterable-menu menu mt-5" data-name="foods">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Noodle</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Noodle</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
                                 
@@ -333,11 +338,13 @@
                 <!-- End Noodle -->
                 
                 <!-- Soup -->
-                <div class="filterable-menu menu" data-name="foods">
+                <div class="filterable-menu menu mt-5" data-name="foods">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Soup</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Soup</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
     
@@ -468,11 +475,13 @@
                 <!-- End Soup -->
                 
                 <!-- Juice -->
-                <div class="filterable-menu menu" data-name="beverages">
+                <div class="filterable-menu menu mt-5" data-name="beverages">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Juice</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Juice</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
     
@@ -532,6 +541,63 @@
                                         </div>
                                     </div>
                                 </div>
+    
+                                <div class="d-flex justify-content-center align-items-center swiper-slide">
+                                    <div class="card card-menu border-0 shadow">
+                                        <div class="bd-placeholder-img card-img-top">
+                                            <img src="../../asset/menu-page/juice-4.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                                of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer px-4 mb-2">
+                                            <div class="d-flex">
+                                                <p class="harga-menu me-auto mb-0" style="color: #39C217;">Rp. 99,000</p>
+                                                <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex justify-content-center align-items-center swiper-slide">
+                                    <div class="card card-menu border-0 shadow">
+                                        <div class="bd-placeholder-img card-img-top">
+                                            <img src="../../asset/menu-page/juice-5.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                                of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer px-4 mb-2">
+                                            <div class="d-flex">
+                                                <p class="harga-menu me-auto mb-0" style="color: #39C217;">Rp. 99,000</p>
+                                                <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="d-flex justify-content-center align-items-center swiper-slide">
+                                    <div class="card card-menu border-0 shadow">
+                                        <div class="bd-placeholder-img card-img-top">
+                                            <img src="../../asset/menu-page/juice-6.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                                of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer px-4 mb-2">
+                                            <div class="d-flex">
+                                                <p class="harga-menu me-auto mb-0" style="color: #39C217;">Rp. 99,000</p>
+                                                <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
 
@@ -546,14 +612,16 @@
                 <!-- End Juicec -->
                 
                 <!-- Coffee -->
-                <div class="filterable-menu menu" data-name="beverages">
+                <div class="filterable-menu menu mt-5" data-name="beverages">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Coffe</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Coffee</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
@@ -572,7 +640,7 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
@@ -591,11 +659,49 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
                                             <img src="../../asset/menu-page/coffee-3.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                                of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer px-4 mb-2">
+                                            <div class="d-flex">
+                                                <p class="harga-menu me-auto mb-0" style="color: #39C217;">Rp. 99,000</p>
+                                                <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center swiper-slide">
+                                    <div class="card card-menu border-0 shadow">
+                                        <div class="bd-placeholder-img card-img-top">
+                                            <img src="../../asset/menu-page/coffee-4.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                                of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer px-4 mb-2">
+                                            <div class="d-flex">
+                                                <p class="harga-menu me-auto mb-0" style="color: #39C217;">Rp. 99,000</p>
+                                                <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center swiper-slide">
+                                    <div class="card card-menu border-0 shadow">
+                                        <div class="bd-placeholder-img card-img-top">
+                                            <img src="../../asset/menu-page/coffee-5.jpg" class="card-img-top" alt="...">
                                         </div>
                                         <div class="card-body px-4">
                                             <h5 class="card-title">Card title</h5>
@@ -624,14 +730,16 @@
                 <!-- End Coffee -->
                 
                 <!-- Ice Drink -->
-                <div class="filterable-menu menu" data-name="beverages">
+                <div class="filterable-menu menu mt-5" data-name="beverages">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Ice Drink</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Ice Drink</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
@@ -650,7 +758,7 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
@@ -669,11 +777,49 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
                                             <img src="../../asset/menu-page/ice-3.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                                of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer px-4 mb-2">
+                                            <div class="d-flex">
+                                                <p class="harga-menu me-auto mb-0" style="color: #39C217;">Rp. 99,000</p>
+                                                <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center swiper-slide">
+                                    <div class="card card-menu border-0 shadow">
+                                        <div class="bd-placeholder-img card-img-top">
+                                            <img src="../../asset/menu-page/ice-4.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                                of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer px-4 mb-2">
+                                            <div class="d-flex">
+                                                <p class="harga-menu me-auto mb-0" style="color: #39C217;">Rp. 99,000</p>
+                                                <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center swiper-slide">
+                                    <div class="card card-menu border-0 shadow">
+                                        <div class="bd-placeholder-img card-img-top">
+                                            <img src="../../asset/menu-page/ice-5.jpg" class="card-img-top" alt="...">
                                         </div>
                                         <div class="card-body px-4">
                                             <h5 class="card-title">Card title</h5>
@@ -702,14 +848,16 @@
                 <!-- End Ice Drink -->
                 
                 <!-- Hot Drink -->
-                <div class="filterable-menu menu" data-name="beverages">
+                <div class="filterable-menu menu mt-5" data-name="beverages">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Hot Drink</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Hot Drink</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
@@ -728,7 +876,7 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
@@ -747,11 +895,30 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="d-flex justify-content-center align-items-center swiper-slide">
                                     <div class="card card-menu border-0 shadow">
                                         <div class="bd-placeholder-img card-img-top">
                                             <img src="../../asset/menu-page/hotDrink-3.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="card-body px-4">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                                of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer px-4 mb-2">
+                                            <div class="d-flex">
+                                                <p class="harga-menu me-auto mb-0" style="color: #39C217;">Rp. 99,000</p>
+                                                <span class="mb-0"><i class="fa-regular fa-star"></i> 5.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center swiper-slide">
+                                    <div class="card card-menu border-0 shadow">
+                                        <div class="bd-placeholder-img card-img-top">
+                                            <img src="../../asset/menu-page/hotDrink-4.jpg" class="card-img-top" alt="...">
                                         </div>
                                         <div class="card-body px-4">
                                             <h5 class="card-title">Card title</h5>
@@ -780,11 +947,13 @@
                 <!-- End Hot Drink -->
                 
                 <!-- Ice Cream -->
-                <div class="filterable-menu menu" data-name="desserts">
+                <div class="filterable-menu menu mt-5" data-name="desserts">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Ice Cream</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Ice Cream</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
     
@@ -858,11 +1027,13 @@
                 <!-- End Ice Cream -->
                 
                 <!-- Pudding -->
-                <div class="filterable-menu menu" data-name="desserts">
+                <div class="filterable-menu menu mt-5" data-name="desserts">
+                    <div class="background-title justify-content-center align-items-center">
+                        <h1 style="margin-left: 120px;">
+                            <span style="color: white;">Desserts</span> 
+                        </h1>
+                    </div>
                     <div class="container">
-                        <div class="">
-                            <h1>Pudding</h1>
-                        </div>
                         <div class="container justify-content-center align-items-center swiper">
                             <div class="swiper-wrapper d-flex gap-0">
     
@@ -936,7 +1107,7 @@
                 <!-- End Pudding -->
 
             </div>
-        </div>
+        </section>
         <!-- End List Menu -->
     </main>
     
@@ -946,7 +1117,7 @@
             <div class="col-3 col-md-2 mb-3">
                 <h5><strong>Other Link</strong></h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="../../index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
                     <li class="nav-item mb-2"><a href="../Menu/menu.html" class="nav-link p-0 text-body-secondary">Menu</a></li>
                 </ul>
             </div>
@@ -982,9 +1153,7 @@
     <!-- Libraries -->
     <script src="../../library/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="../../library/iziToast/iziToast.min.js" type="text/javascript"></script>
-    <script src="../../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js" integrity="sha512-/LKHQ9K9yatyOfEKXiysc9SPCpF6xkvfHQxtPkhdKS83GvfyIWDwKaOr3/LqVxbEX89Bqz+SbMHEPWm0AeRWnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Scripts -->
     <script src="../../js/main.script.js"></script>

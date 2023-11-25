@@ -11,6 +11,12 @@
     }
 }
 
+.filterable-menu .background-title {
+    background-color: #FF9500;
+    height: 48px;
+    width: 25vw;
+}
+
 .main-image-text{
     position: absolute;
     top: 50%;
@@ -33,7 +39,7 @@
     width: 100%;
     z-index: 1;
     border: none;
-    transform: translateY(-200px);
+    transform: translateY(-100px);
 }
 
 #list-menu .card-list{
