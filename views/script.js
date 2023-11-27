@@ -50,3 +50,21 @@ window.onload = function() {
         animateValue("counter3", 0, 45, 2000);
     }, 1000);
 }
+
+const galleryFilter = document.querySelectorAll(".gallery-images");
+const galleryText = document.querySelectorAll(".gallery-content");
+
+const changeText = e => {
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+
+    galleryText.forEach(text => {
+        text.classList.add("hide");
+
+        if (text.dataset.name === e.target.dataset.name) {
+            text.classList.remove("hide");
+        }
+    });
+};
+
+galleryFilter.forEach(img => img.addEventListener("click", changeText));
