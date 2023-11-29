@@ -44,8 +44,23 @@
 #card-menu .card.card-menu {
     box-shadow: 10px;
     border-radius: 20px !important;
-    width: 24rem;
+    width: 20rem;
     height: 400px;
+}
+
+#card-menu .card.card-menu .card-title {
+    border: none;
+    font-weight: 500;
+    margin-block: 0.5rem;
+    border-radius: 80px !important;
+    width: 100%;
+}
+
+#card-menu .card.card-menu .card-text {
+    border: none;
+    margin-top: 1rem;
+    font-weight: 400;
+    width: 100%;
 }
 
 .card .card-footer {
